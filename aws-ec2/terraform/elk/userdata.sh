@@ -5,7 +5,7 @@ export HOME=/root
 cd /root
 
 # download the packer-aws-elk-monitoring project
-git clone https://github.com/apolloclark/packer-aws-elk ./packer-aws-elk
+git clone https://github.com/PeeterXXL/packer-aws-elk ./packer-aws-elk
 cd ./packer-aws-elk/config/ansible
 
 # download the ansible playbooks into the "roles" folder

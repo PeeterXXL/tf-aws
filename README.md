@@ -347,7 +347,7 @@ nano /var/log/kibana/kibana.log
 - **[packer-aws-java](https://github.com/apolloclark/packer-aws-java)**
   - [geerlingguy.java](https://github.com/geerlingguy/ansible-role-java)
 
-  - **[packer-aws-elk](https://github.com/apolloclark/packer-aws-elk)**
+  - **[packer-aws-elk](https://github.com/PeeterXXL/packer-aws-elk)**
     - [apolloclark.zookeeper](https://github.com/apolloclark/ansible-role-zookeeper)
     - [apolloclark.kafka](https://github.com/apolloclark/ansible-role-kafka)
     - [apolloclark.elasticsearch](https://github.com/apolloclark/ansible-role-elasticsearch)
