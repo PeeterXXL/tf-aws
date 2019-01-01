@@ -28,8 +28,10 @@ export TF_VAR_webapp_ami_id=$(aws ec2 describe-images \
 
 printenv | grep "TF_VAR"
 
+terraform init
 terraform get
 terraform plan
+#aws iam delete-instance-profile --instance-profile-name iam_profile_parameter_store
 terraform apply -auto-approve
 
 terraform output -module=bastion | grep "ip" --color=never
