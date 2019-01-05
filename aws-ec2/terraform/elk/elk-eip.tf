@@ -30,3 +30,13 @@ resource "aws_eip_association" "elk_eip_association" {
   instance_id   = "${aws_instance.elk_ec2.id}"
   allocation_id = "${aws_eip.kafka_eip.id}"
 }
+
+resource "aws_eip_association" "elk2_eip_association" {
+  instance_id   = "${aws_instance.elk_ec2_2.id}"
+  allocation_id = "${aws_eip.kafka_eip.id}"
+}
+
+resource "aws_eip_association" "elk3_eip_association" {
+  instance_id   = "${aws_instance.elk_ec2_3.id}"
+  allocation_id = "${aws_eip.kafka_eip.id}"
+}
