@@ -16,9 +16,9 @@
 [submodule "packer/packer-aws-bastion"]
 	path = packer/packer-aws-bastion
 	url = https://github.com/apolloclark/packer-aws-bastion
-[submodule "packer/packer-aws-elk"]
-	path = packer/packer-aws-elk
-	url = https://github.com/PeeterXXL/packer-aws-elk
 [submodule "docker/packer-elk-docker"]
 	path = docker/packer-elk-docker
 	url = https://github.com/apolloclark/packer-elk-docker
+[submodule "packer/packer-aws-elk"]
+	path = packer/packer-aws-elk
+	url = https://github.com/PeeterXXL/packer-aws-elk.git
