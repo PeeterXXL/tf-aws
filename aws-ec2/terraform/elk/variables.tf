@@ -17,13 +17,11 @@ variable "instance_type" {}
 variable "iam_profile_parameter_store-name" {}
 variable "sg_ssh_from_bastion-id" {}
 variable "sg_tcp_to_elk-id" {}
-
+variable "webapp_lc_sg" { type = "list" }
 variable "trusted_ip_range" {}
 variable "vpc_cidr" {}
 variable "vpc_id" {}
-variable "public_subnet_ids" {
-  type = "list"
-}
+variable "public_subnet_ids" { type = "list" }
 variable "nat_sg-id" {}
 variable "asg_min" {}
 variable "asg_max" {}
