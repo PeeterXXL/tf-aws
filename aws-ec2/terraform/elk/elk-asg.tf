@@ -18,7 +18,7 @@ resource "aws_autoscaling_group" "elk_asg" {
   force_delete          = true
   launch_configuration  = "${aws_launch_configuration.elk_lc.id}"
   # load_balancers        = ["${aws_alb.elk_alb.name}"]
-  target_group_arns      = ["${aws_alb_target_group.elk_alb_tg.arn}"]
+  # target_group_arns      = ["${aws_alb_target_group.elk_alb_tg.arn}"]
 
   tag {
     key                 = "Name"
