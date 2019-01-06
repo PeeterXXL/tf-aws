@@ -23,6 +23,3 @@ variable "vpc_cidr" {}
 variable "vpc_id" {}
 variable "public_subnet_ids" { type = "list" }
 variable "nat_sg-id" {}
-variable "asg_min" {}
-variable "asg_max" {}
-variable "asg_desired" {}
