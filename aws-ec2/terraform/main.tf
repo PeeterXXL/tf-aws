@@ -97,6 +97,10 @@ module "elk" {
   iam_profile_parameter_store-name = "${module.iam.iam_profile_parameter_store-name}"
   sg_ssh_from_bastion-id           = "${module.security-groups.sg_ssh_from_bastion-id}"
   sg_tcp_to_elk-id                 = "${module.security-groups.sg_tcp_to_elk-id}"
+  elk_lc_sg                        = [
+      "${module.security-groups.sg_ssh_from_bastion-id}",
+      "${module.security-groups.sg_tcp_to_elk-id}"
+  ]
 
   # Network
   trusted_ip_range       = "${var.trusted_ip_range}"
