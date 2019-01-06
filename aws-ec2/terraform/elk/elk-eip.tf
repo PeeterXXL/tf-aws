@@ -15,30 +15,30 @@ output "kafka_eip-id" {
   value = "${aws_eip.kafka_eip.id}"
 }
 
-resource "aws_eip" "kafka_eip" {
+resource "aws_eip" "kafka_eip2" {
   instance = "${aws_instance.elk_ec2_2.id}"
   vpc      = true
 
   tags = {
-    Name = "tf-kafka_eip"
+    Name = "tf-kafka_eip2"
   }
 }
 
-output "kafka_eip-id" {
-  value = "${aws_eip.kafka_eip.id}"
+output "kafka_eip2-id" {
+  value = "${aws_eip.kafka_eip2.id}"
 }
 
-resource "aws_eip" "kafka_eip" {
+resource "aws_eip" "kafka_eip3" {
   instance = "${aws_instance.elk_ec2_3.id}"
   vpc      = true
 
   tags = {
-    Name = "tf-kafka_eip"
+    Name = "tf-kafka_eip3"
   }
 }
 
-output "kafka_eip-id" {
-  value = "${aws_eip.kafka_eip.id}"
+output "kafka_eip3-id" {
+  value = "${aws_eip.kafka_eip3.id}"
 }
 
 
