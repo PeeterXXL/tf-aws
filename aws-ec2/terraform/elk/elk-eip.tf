@@ -15,6 +15,33 @@ output "kafka_eip-id" {
   value = "${aws_eip.kafka_eip.id}"
 }
 
+resource "aws_eip" "kafka_eip" {
+  instance = "${aws_instance.elk_ec2_2.id}"
+  vpc      = true
+
+  tags = {
+    Name = "tf-kafka_eip"
+  }
+}
+
+output "kafka_eip-id" {
+  value = "${aws_eip.kafka_eip.id}"
+}
+
+resource "aws_eip" "kafka_eip" {
+  instance = "${aws_instance.elk_ec2_3.id}"
+  vpc      = true
+
+  tags = {
+    Name = "tf-kafka_eip"
+  }
+}
+
+output "kafka_eip-id" {
+  value = "${aws_eip.kafka_eip.id}"
+}
+
+
 output "kafka_eip-public_ip" {
   value = "${aws_eip.kafka_eip.public_ip}"
 }
