@@ -104,6 +104,11 @@ module "elk" {
   vpc_cidr               = "${var.vpc_cidr}"
   public_subnet_ids      = "${module.network.public_subnet_ids}"
   nat_sg-id              = "${module.network.nat_sg-id}"
+
+  # Auto-scaling Group
+  asg_min     = "${var.asg_min}"
+  asg_max     = "${var.asg_max}"
+  asg_desired = "${var.asg_desired}"
 }
 
 
